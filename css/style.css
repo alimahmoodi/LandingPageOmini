@@ -65,7 +65,8 @@ body {
       color: red; }
 
 .features {
-  padding-top: 65px; }
+  padding-top: 65px;
+  padding-bottom: 65px; }
   .features__caption {
     font-size: 30px;
     font-weight: 200;
