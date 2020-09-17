@@ -1,0 +1,66 @@
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../../img/herobike.jpg");
+
+    height: 100vh;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    &__logo {
+        width: 100px;
+        height: 100px;
+    }
+    padding-top: 30px;
+
+    &__caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        &-text {
+            color: white;
+            font-weight: 300;
+            font-size: 38px;
+            word-spacing: 3px;
+            letter-spacing: 2px;
+        }
+    }
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    &-list {
+        font-size: 15px;
+        display: flex;
+        margin-left: auto;
+        list-style-type: none;
+        align-items: center;
+        margin-bottom: 0;
+        &__item {
+            // width: 160px;
+            margin-left: 20px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    &__link:link {
+        color: white;
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+        padding: 5px;
+        transition: border 0.3s;
+        i {
+            margin-right: 4px;
+            transition: color 0.3s;
+        }
+        &:hover {
+            border-bottom: 2px solid orange;
+        }
+        i:hover {
+            color: red;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.features {
+    &__card-holder {
+        margin-top: 50px;
+    }
+    &__card {
+        &-logo {
+            width: 60px;
+            margin-bottom: 10px;
+        }
+        &-descreption {
+            font-size: 15px;
+            line-height: 152%;
+        }
+    }
+}
