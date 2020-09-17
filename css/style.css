@@ -97,3 +97,19 @@ body {
 .features__card-descreption {
   font-size: 15px;
   line-height: 152%; }
+
+.gallery__item {
+  background-color: black;
+  height: 240px;
+  padding: 0;
+  overflow: hidden; }
+  .gallery__item-img {
+    height: auto;
+    width: 100%;
+    opacity: 0.7;
+    transform: scale(1.15);
+    transition: all 0.5s;
+    transform-origin: center; }
+    .gallery__item-img:hover {
+      transform: scale(1);
+      opacity: 1; }
