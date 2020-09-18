@@ -1,0 +1,66 @@
+.plans {
+    padding: 70px 0;
+    background-color: #f4f4f4;
+    &__row {
+        justify-content: space-evenly;
+    }
+    &__card {
+        background-color: white;
+        box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.3);
+        border-radius: 6px;
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 25%;
+        // margin: 0 20px;
+
+        &-price {
+            font-size: 50px;
+            font-weight: 100;
+            color: orange;
+        }
+
+        &-duration {
+            color: orange;
+            font-weight: 300;
+        }
+
+        &-header {
+            border-bottom: 1px solid #e8e8e8;
+            padding: 15px;
+        }
+
+        &-body {
+            padding: 15px;
+            border-bottom: 1px solid #e8e8e8;
+        }
+        &-item {
+            margin-bottom: 6px;
+            &-name {
+                margin-left: 15px;
+            }
+        }
+        &-icon {
+            color: orange;
+        }
+        &-btn {
+            width: 140px;
+            height: 40px;
+            color: white;
+            background-color: orange;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            outline: none;
+            border-radius: 20px;
+            text-transform: capitalize;
+            display: block;
+            margin: 15px auto;
+        }
+    }
+
+    &__description {
+        font-size: 12px;
+        font-weight: 200;
+    }
+}

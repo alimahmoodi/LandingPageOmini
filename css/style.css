@@ -116,7 +116,8 @@ body {
 
 .how-works {
   padding-top: 70px;
-  padding-bottom: 70px; }
+  padding-bottom: 70px;
+  background-color: #f4f4f4; }
   .how-works__img-holder {
     text-align: right;
     padding-right: 60px; }
@@ -138,9 +139,9 @@ body {
       width: 50px;
       height: 50px;
       font-size: 25px;
-      font-weight: 200;
+      font-weight: 300;
       color: orange;
-      border: 1px solid orange;
+      border: 2px solid orange;
       border-radius: 50%;
       flex-shrink: 0;
       display: flex;
@@ -151,3 +152,120 @@ body {
       margin-left: 25px;
       font-size: 15px;
       font-weight: 300; }
+
+.cities {
+  padding-top: 65px;
+  padding-bottom: 70px; }
+  .cities__card-img {
+    width: 250px;
+    height: auto;
+    margin-bottom: 15px; }
+  .cities__card-header {
+    margin-bottom: 12px; }
+  .cities__card-info-logo {
+    width: 17px;
+    height: 17px;
+    margin-right: 15px;
+    fill: orange; }
+  .cities__card-info-item {
+    padding-left: 7px;
+    margin-bottom: 3px; }
+  .cities__card-info-social:link {
+    color: orange;
+    border-bottom: 1px solid orange;
+    padding-bottom: 1px;
+    font-weight: 200;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: border-bottom 0.2s, color 0.2s;
+    text-decoration: none; }
+    .cities__card-info-social:link:hover {
+      text-decoration: none;
+      color: blue;
+      border-bottom: 1px solid transparent; }
+
+.qouets {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../img/herobike.jpg");
+  padding: 70px 0;
+  background-attachment: fixed;
+  background-position: bottom; }
+  .qouets__header {
+    color: white; }
+  .qouets__line {
+    margin-bottom: 80px; }
+  .qouets__text {
+    font-style: italic;
+    font-weight: 100;
+    position: relative;
+    color: white; }
+    .qouets__text::before {
+      content: "\201c";
+      font-size: 60px;
+      position: absolute;
+      display: block;
+      top: -50px;
+      left: 15px;
+      color: white;
+      font-style: normal; }
+  .qouets__customer {
+    margin-top: 35px; }
+    .qouets__customer-img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%; }
+    .qouets__customer-name {
+      color: white;
+      font-weight: 100;
+      font-style: italic;
+      font-size: 14px;
+      margin-left: 8px; }
+
+.plans {
+  padding: 70px 0;
+  background-color: #f4f4f4; }
+  .plans__row {
+    justify-content: space-evenly; }
+  .plans__card {
+    background-color: white;
+    box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 25%; }
+    .plans__card-price {
+      font-size: 50px;
+      font-weight: 100;
+      color: orange; }
+    .plans__card-duration {
+      color: orange;
+      font-weight: 300; }
+    .plans__card-header {
+      border-bottom: 1px solid #e8e8e8;
+      padding: 15px; }
+    .plans__card-body {
+      padding: 15px;
+      border-bottom: 1px solid #e8e8e8; }
+    .plans__card-item {
+      margin-bottom: 6px; }
+      .plans__card-item-name {
+        margin-left: 15px; }
+    .plans__card-icon {
+      color: orange; }
+    .plans__card-btn {
+      width: 140px;
+      height: 40px;
+      color: white;
+      background-color: orange;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      outline: none;
+      border-radius: 20px;
+      text-transform: capitalize;
+      display: block;
+      margin: 15px auto; }
+  .plans__description {
+    font-size: 12px;
+    font-weight: 200; }
