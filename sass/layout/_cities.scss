@@ -1,9 +1,9 @@
 .cities {
     padding-top: 65px;
-    padding-bottom: 70px;
+    // padding-bottom: 20px;
     &__card {
         &-img {
-            width: 250px;
+            width: 100%;
             height: auto;
             margin-bottom: 15px;
         }
@@ -39,6 +39,9 @@
                     border-bottom: 1px solid transparent;
                 }
             }
+        }
+        @include respond(phone) {
+            margin-bottom: 35px;
         }
     }
 }

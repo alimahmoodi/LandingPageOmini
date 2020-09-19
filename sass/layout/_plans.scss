@@ -1,5 +1,8 @@
 .plans {
     padding: 70px 0;
+    @include respond(tab-port) {
+        padding-bottom: 10px;
+    }
     background-color: #f4f4f4;
     &__row {
         justify-content: space-evenly;
@@ -11,7 +14,10 @@
         padding-left: 0;
         padding-right: 0;
         max-width: 29%;
-        // margin: 0 20px;
+        @include respond(tab-port) {
+            max-width: 70%;
+            margin-bottom: 35px;
+        }
 
         &-price {
             font-size: 50px;

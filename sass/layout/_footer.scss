@@ -15,11 +15,19 @@
 
     &__list {
         display: flex;
+        @include respond(phone) {
+            display: block;
+        }
+
         &-link {
             color: #888;
             font-size: 12px;
             margin-right: 15px;
             text-transform: capitalize;
+            @include respond(phone) {
+                display: block;
+                font-size: 14px;
+            }
         }
     }
 

@@ -11,6 +11,10 @@
     &__logo {
         width: 100px;
         height: 100px;
+        @include respond(phone) {
+            width: 70px;
+            height: 70px;
+        }
     }
     padding-top: 30px;
 
@@ -25,6 +29,15 @@
             font-size: 38px;
             word-spacing: 3px;
             letter-spacing: 2px;
+            @include respond(tab-port) {
+                font-size: 30px;
+            }
+        }
+        & button {
+            @include respond(phone) {
+                padding-left: 0;
+                padding-right: 0;
+            }
         }
     }
 }
@@ -40,18 +53,19 @@
         align-items: center;
         margin-bottom: 0;
         &__item {
-            // width: 160px;
             margin-left: 20px;
             display: flex;
             justify-content: center;
         }
     }
-    &__link:link {
+    &__link:link,
+    &__link:visited {
         color: white;
         text-decoration: none;
         border-bottom: 2px solid transparent;
         padding: 5px;
         transition: border 0.3s;
+
         i {
             margin-right: 4px;
             transition: color 0.3s;
@@ -62,5 +76,15 @@
         i:hover {
             color: red;
         }
+
+        @include respond(tab-port) {
+            & span {
+                display: none;
+            }
+        }
+    }
+
+    @include respond(tab-port) {
+        padding: 0px 30px;
     }
 }

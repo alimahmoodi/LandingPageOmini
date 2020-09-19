@@ -11,5 +11,9 @@
             font-size: 15px;
             line-height: 152%;
         }
+
+        @include respond(phone) {
+            margin-bottom: 25px;
+        }
     }
 }
