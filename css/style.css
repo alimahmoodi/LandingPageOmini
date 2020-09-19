@@ -232,7 +232,7 @@ body {
     border-radius: 6px;
     padding-left: 0;
     padding-right: 0;
-    max-width: 25%; }
+    max-width: 29%; }
     .plans__card-price {
       font-size: 50px;
       font-weight: 100;
@@ -269,3 +269,32 @@ body {
   .plans__description {
     font-size: 12px;
     font-weight: 200; }
+
+.contact-us {
+  padding: 70px 0; }
+  .contact-us__form {
+    margin: 40px auto; }
+
+.footer {
+  background-color: #444;
+  padding: 40px 0; }
+  .footer__list-holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .footer__social-link {
+    margin-left: 15px;
+    color: #888; }
+  .footer__list {
+    display: flex; }
+    .footer__list-link {
+      color: #888;
+      font-size: 12px;
+      margin-right: 15px;
+      text-transform: capitalize; }
+  .footer__copy-right {
+    text-align: center;
+    font-size: 13px;
+    color: #888;
+    margin-top: 40px;
+    margin-bottom: 0; }
