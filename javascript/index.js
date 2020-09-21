@@ -26,7 +26,7 @@ const fixedNav = () => {
 
 const motion = () => {
     if (window.scrollY >= howWorkPhoneOffSetTop) {
-        console.log(howWorkPhoneOffSetTop);
+        console.log(howWorkPhoneOffSetTop + 50);
         howWorkPhone.classList.add("how-works__img--motion");
     }
 };
