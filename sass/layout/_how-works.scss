@@ -15,6 +15,10 @@
 
     &__img {
         width: 210px;
+        &--motion {
+            animation-name: fadeInUp;
+            animation-duration: 1s;
+        }
     }
 
     &__items {

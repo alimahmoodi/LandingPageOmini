@@ -11,6 +11,11 @@
     &__logo {
         width: 100px;
         height: 100px;
+        &--fix {
+            width: 60px;
+            height: 60px;
+            margin: 5px 0;
+        }
         @include respond(phone) {
             width: 70px;
             height: 70px;
@@ -84,7 +89,23 @@
         }
     }
 
+    &__holder--fix {
+        position: fixed;
+        background-color: white;
+        // opacity: 0.1;
+        width: 100%;
+        color: black;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    }
+
     @include respond(tab-port) {
         padding: 0px 30px;
     }
+}
+
+.navigation__link--fix:link,
+.navigation__link--fix:visited {
+    color: #888;
 }

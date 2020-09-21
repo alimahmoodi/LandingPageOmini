@@ -1,3 +1,11 @@
+@keyframes fadeInUp {
+  from {
+    transform: translate(0, 100%);
+    opacity: 0; }
+  to {
+    transform: translate(0, 0);
+    opacity: 1; } }
+
 *,
 *::after,
 *::before {
@@ -24,6 +32,10 @@ body {
   .header__logo {
     width: 100px;
     height: 100px; }
+    .header__logo--fix {
+      width: 60px;
+      height: 60px;
+      margin: 5px 0; }
     @media only screen and (max-width: 36em) {
       .header__logo {
         width: 70px;
@@ -77,9 +89,21 @@ body {
     @media only screen and (max-width: 48em) {
       .navigation__link:link span, .navigation__link:visited span {
         display: none; } }
+  .navigation__holder--fix {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    color: black;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2); }
   @media only screen and (max-width: 48em) {
     .navigation {
       padding: 0px 30px; } }
+
+.navigation__link--fix:link,
+.navigation__link--fix:visited {
+  color: #888; }
 
 .features {
   padding-top: 65px;
@@ -153,6 +177,9 @@ body {
         margin-bottom: 30px; } }
   .how-works__img {
     width: 210px; }
+    .how-works__img--motion {
+      animation-name: fadeInUp;
+      animation-duration: 1s; }
   .how-works__items {
     padding-left: 60px; }
     .how-works__items img {
