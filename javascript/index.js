@@ -3,7 +3,8 @@ const nav = document.querySelector(".navigation__holder");
 const logo = document.querySelector(".header__logo");
 const link = document.querySelectorAll(".navigation__link");
 
-const howWorkPhoneOffSetTop = document.querySelector(".how-works").offsetTop;
+const howWorkOffSetTop = document.querySelector(".how-works").offsetTop;
+console.log(howWorkOffSetTop);
 const howWorkPhone = document.querySelector(".how-works__img");
 
 const fixedNav = () => {
@@ -25,8 +26,7 @@ const fixedNav = () => {
 };
 
 const motion = () => {
-    if (window.scrollY >= howWorkPhoneOffSetTop) {
-        console.log(howWorkPhoneOffSetTop + 50);
+    if (window.scrollY >= howWorkOffSetTop) {
         howWorkPhone.classList.add("how-works__img--motion");
     }
 };
