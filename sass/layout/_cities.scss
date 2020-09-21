@@ -2,6 +2,10 @@
     padding-top: 65px;
     // padding-bottom: 20px;
     &__card {
+        margin-bottom: 30px;
+        @include respond(phone) {
+            margin-bottom: 35px;
+        }
         &-img {
             width: 100%;
             height: auto;
@@ -39,9 +43,6 @@
                     border-bottom: 1px solid transparent;
                 }
             }
-        }
-        @include respond(phone) {
-            margin-bottom: 35px;
         }
     }
 }
